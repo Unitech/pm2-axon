@@ -57,10 +57,10 @@ setTimeout(function(){
 }, 100);
 
 function done() {
-  vals.should.include('a');
-  vals.should.include('b');
-  vals.should.include('c');
-  vals.should.have.length(3);
+  vals.should.containEql('a');
+  vals.should.containEql('b');
+  vals.should.containEql('c');
+ vals.should.have.length(3);
   worker.close();
   relaySub.close();
   relayPub.close();
