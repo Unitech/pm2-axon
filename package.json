@@ -2,12 +2,13 @@
   "name": "pm2-axon",
   "description": "High-level messaging & socket patterns implemented in pure js",
   "version": "2.0.1",
+  "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "author": {
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"
   },
   "dependencies": {
-    "debug": "*",
+    "debug": "~2.0.0",
     "configurable": "0.0.1",
     "escape-regexp": "0.0.1",
     "amp-message": "~0.1.1",
@@ -33,10 +34,8 @@
     "type": "git",
     "url": "https://github.com/visionmedia/axon.git"
   },
-  "license": "MIT",
-  "readmeFilename": "Readme.md",
-  "bugs": {
-    "url": "https://github.com/visionmedia/axon/issues"
+  "scripts": {
+    "test": "make test"
   },
-  "homepage": "https://github.com/unitech/pm2-axon"
+  "license": "MIT"
 }
