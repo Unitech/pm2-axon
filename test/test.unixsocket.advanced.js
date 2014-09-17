@@ -17,11 +17,13 @@ rep.on('message', function(msg, reply){
   req.close();
   setTimeout(function() {
     req.bind(path);
-  }, 1000);
+    setTimeout(function() {
+      req.close();
+      rep.close();
+    }, 300);
+  }, 300);
 });
 
 req.send('hello', function(msg){
   msg.toString().should.equal('got "hello"');
-  req.close();
-  rep.close();
 });
