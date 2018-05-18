@@ -2,7 +2,6 @@
   "name": "pm2-axon",
   "description": "High-level messaging & socket patterns implemented in pure js",
   "version": "3.1.1",
-  "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "author": {
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"

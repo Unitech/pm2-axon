@@ -20,7 +20,7 @@ pull.once('error', function(err){
   assert(2 == pull.socks.length);
   var err = new Error('faux EPIPE');
   err.code = 'EPIPE';
-  pull.socks[0]._destroy(err);
+  pull.socks[0].destroy(err);
 });
 
 pull.once('ignored error', function(err){
@@ -51,5 +51,5 @@ function done(){
   assert(1 == b.socks.length);
   assert(1 == c.socks.length);
   assert(3 == pull.socks.length);
-  pull.socks[0]._destroy(new Error('boom'));
+  pull.socks[0].destroy(new Error('boom'));
 }

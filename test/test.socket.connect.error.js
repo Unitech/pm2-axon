@@ -15,5 +15,5 @@ push.on('error', function(err){
 });
 
 push.on('connect', function(){
-  push.socks[0]._destroy(new Error('boom'));
+  push.socks[0].destroy(new Error('boom'));
 });
