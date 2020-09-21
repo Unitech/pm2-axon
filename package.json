@@ -6,6 +6,9 @@
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"
   },
+  "engines": {
+    "node": ">=5"
+  },
   "dependencies": {
     "amp": "~0.3.1",
     "amp-message": "~0.1.1",
