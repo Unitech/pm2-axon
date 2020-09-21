@@ -38,5 +38,9 @@
   "scripts": {
     "test": "make test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib",
+    "index.js"
+  ]
 }
