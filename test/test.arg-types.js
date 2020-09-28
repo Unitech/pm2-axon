@@ -12,7 +12,7 @@ var n = 0;
 var done;
 
 push.bind(4000);
-push.send('foo', { bar: 'baz' }, ['some', 1], new Buffer('hello'));
+push.send('foo', { bar: 'baz' }, ['some', 1], Buffer.from('hello'));
 
 pull.connect(4000);
 pull.on('message', function(a, b, c, d){

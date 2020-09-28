@@ -6,18 +6,21 @@
     "name": "TJ Holowaychuk",
     "email": "tj@vision-media.ca"
   },
+  "engines": {
+    "node": ">=5"
+  },
   "dependencies": {
-    "debug": "^3.0",
-    "escape-regexp": "0.0.1",
+    "amp": "~0.3.1",
     "amp-message": "~0.1.1",
-    "amp": "~0.3.1"
+    "debug": "^4.2",
+    "escape-string-regexp": "^4.0.0"
   },
   "devDependencies": {
     "better-assert": "*",
     "should": "*",
-    "mocha": "^3.5",
+    "mocha": "^8.1",
     "commander": "*",
-    "humanize-number": "0.0.1"
+    "humanize-number": "0.0.2"
   },
   "keywords": [
     "zmq",
@@ -35,5 +38,9 @@
   "scripts": {
     "test": "make test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "lib",
+    "index.js"
+  ]
 }
